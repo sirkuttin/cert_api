@@ -11,13 +11,9 @@
 *.out
 
 # Project-local glide cache, RE: https://github.com/Masterminds/glide/issues/736
-.glide/
-
 \.idea/
 
 vendor/
-
-cloud_api_to_edge_mqtt
 
 tmp_db/
 
