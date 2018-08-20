@@ -18,13 +18,11 @@ func init() {
 
 func main() {
 
-	opts := badger.DefaultOptions
-	opts.Dir = "app_db"
-	opts.ValueDir = "app_db"
-	db, err := badger.Open(opts)
+	db, err := createDB()
 	if err != nil {
 		log.Fatal(err)
 	}
+
 	errChan := make(chan error)
 	go func() {
 		api.Start(log, db)
@@ -46,4 +44,11 @@ func main() {
 
 	db.Close()
 	os.Exit(exitCode)
+}
+
+func createDB() (db *badger.DB, err error) {
+	opts := badger.DefaultOptions
+	opts.Dir = "app_db"
+	opts.ValueDir = "app_db"
+	return badger.Open(opts)
 }
