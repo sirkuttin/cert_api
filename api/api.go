@@ -20,8 +20,8 @@ func Start(logger *logrus.Logger, database *badger.DB) {
 	db = database
 
 	router := mux.NewRouter()
-	router.HandleFunc("/cert/{domain}", getCert()).Methods("GET")
-	router.HandleFunc("/cert/{domain}", addCert()).Methods("POST")
+	router.HandleFunc("/cert/{domain}", getCertificate()).Methods("GET")
+	router.HandleFunc("/cert/{domain}", addCertificate()).Methods("POST")
 
 	err := http.ListenAndServe(":8000", handlers.CORS(createCorsOptions()...)(router))
 	if err != nil {
