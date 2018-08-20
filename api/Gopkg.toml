@@ -26,20 +26,28 @@
 
 
 [[constraint]]
+  name = "github.com/Sirupsen/logrus"
+  version = "1.0.6"
+
+[[constraint]]
+  name = "github.com/dgraph-io/badger"
+  version = "1.5.3"
+
+[[constraint]]
   name = "github.com/gorilla/handlers"
-  version = "1.3.0"
+  version = "1.4.0"
 
 [[constraint]]
   name = "github.com/gorilla/mux"
-  version = "1.6.1"
+  version = "1.6.2"
 
 [[constraint]]
-  branch = "master"
-  name = "github.com/sirkuttin/edge_vehicle_data"
+  name = "github.com/pkg/errors"
+  version = "0.8.0"
 
 [[constraint]]
-  branch = "master"
-  name = "github.com/sirkuttin/mqtt"
+  name = "github.com/satori/go.uuid"
+  version = "1.2.0"
 
 [prune]
   go-tests = true

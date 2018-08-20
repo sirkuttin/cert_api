@@ -2,71 +2,87 @@
 
 
 [[projects]]
+  branch = "master"
+  name = "github.com/AndreasBriese/bbloom"
+  packages = ["."]
+  revision = "28f7e881ca57bc00e028f9ede9f0d9104cfeef5e"
+
+[[projects]]
   name = "github.com/Sirupsen/logrus"
   packages = ["."]
-  revision = "c155da19408a8799da419ed3eeb0cb5db0ad5dbc"
-  version = "v1.0.5"
+  revision = "3e01752db0189b9157070a0e1668a620f9a85da2"
+  version = "v1.0.6"
 
 [[projects]]
-  name = "github.com/eclipse/paho.mqtt.golang"
+  name = "github.com/dgraph-io/badger"
   packages = [
     ".",
-    "packets"
+    "options",
+    "protos",
+    "skl",
+    "table",
+    "y"
   ]
-  revision = "36d01c2b4cbeb3d2a12063e4880ce30800af9560"
-  version = "v1.1.1"
+  revision = "391b6d3b93e6014fe8c2971fcc0c1266e47dbbd9"
+  version = "v1.5.3"
 
 [[projects]]
-  name = "github.com/go-ozzo/ozzo-validation"
+  branch = "master"
+  name = "github.com/dgryski/go-farm"
   packages = ["."]
-  revision = "85dcd8368eba387e65a03488b003e233994e87e9"
-  version = "v3.3"
+  revision = "2de33835d10275975374b37b2dcfd22c9020a1f5"
+
+[[projects]]
+  name = "github.com/golang/protobuf"
+  packages = ["proto"]
+  revision = "b4deda0973fb4c70b50d226b1af49f3da59f5265"
+  version = "v1.1.0"
 
 [[projects]]
   name = "github.com/gorilla/context"
   packages = ["."]
-  revision = "1ea25387ff6f684839d82767c1733ff4d4d15d0a"
-  version = "v1.1"
+  revision = "08b5f424b9271eedf6f9f0ce86cb9396ed337a42"
+  version = "v1.1.1"
 
 [[projects]]
   name = "github.com/gorilla/handlers"
   packages = ["."]
-  revision = "90663712d74cb411cbef281bc1e08c19d1a76145"
-  version = "v1.3.0"
+  revision = "7e0847f9db758cdebd26c149d0ae9d5d0b9c98ce"
+  version = "v1.4.0"
 
 [[projects]]
   name = "github.com/gorilla/mux"
   packages = ["."]
-  revision = "53c1911da2b537f792e7cafcb446b05ffe33b996"
-  version = "v1.6.1"
+  revision = "e3702bed27f0d39777b0b37b664b6280e8ef8fbf"
+  version = "v1.6.2"
 
 [[projects]]
-  branch = "master"
-  name = "github.com/sirkuttin/edge_vehicle_data"
+  name = "github.com/pkg/errors"
   packages = ["."]
-  revision = "4084383b56b7bc2456f61bd7d5bd52127d1f082f"
+  revision = "645ef00459ed84a119197bfb8d8205042c6df63d"
+  version = "v0.8.0"
 
 [[projects]]
-  branch = "master"
-  name = "github.com/sirkuttin/mqtt"
+  name = "github.com/satori/go.uuid"
   packages = ["."]
-  revision = "44c0f838cf428a77cd86b777f6fe2aff43ceb237"
+  revision = "f58768cc1a7a7e77a3bd49e98cdd21419399b6a3"
+  version = "v1.2.0"
 
 [[projects]]
   branch = "master"
   name = "golang.org/x/crypto"
   packages = ["ssh/terminal"]
-  revision = "d6449816ce06963d9d136eee5a56fca5b0616e7e"
+  revision = "aabede6cba87e37f413b3e60ebfc214f8eeca1b0"
 
 [[projects]]
   branch = "master"
   name = "golang.org/x/net"
   packages = [
-    "internal/socks",
-    "proxy",
-    "websocket"
+    "context",
+    "internal/timeseries",
+    "trace"
   ]
-  revision = "61147c48b25b599e5b561d2e9c4f3e1ef489ca41"
+  revision = "aaf60122140d3fcf75376d319f0554393160eb50"
 
 [[projects]]
   branch = "master"
@@ -75,11 +91,11 @@
     "unix",
     "windows"
   ]
-  revision = "3b87a42e500a6dc65dae1a55d0b641295971163e"
+  revision = "1c9583448a9c3aa0f9a6a5241bf73c0bd8aafded"
 
 [solve-meta]
   analyzer-name = "dep"
   analyzer-version = 1
-  inputs-digest = "102bfa5ae411802d98c77e2352ec3b590173c0c265835928b830493e52a4d0a1"
+  inputs-digest = "868ca6a0cd9a2483ecb0f850ea5f64cb5eeb4e8c4b7791a515255776cccb789f"
   solver-name = "gps-cdcl"
   solver-version = 1
