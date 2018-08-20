@@ -3,11 +3,11 @@ package main
 import (
 	"errors"
 	"github.com/Sirupsen/logrus"
+	"github.com/dgraph-io/badger"
 	"github.com/sirkuttin/acme-cert-api/api"
 	"os"
-	"github.com/dgraph-io/badger"
-	"syscall"
 	"os/signal"
+	"syscall"
 )
 
 var log = logrus.New()

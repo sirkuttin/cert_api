@@ -2,10 +2,10 @@ package api
 
 import (
 	"github.com/Sirupsen/logrus"
+	"github.com/dgraph-io/badger"
 	"github.com/gorilla/handlers"
 	"github.com/gorilla/mux"
 	"net/http"
-	"github.com/dgraph-io/badger"
 )
 
 var (

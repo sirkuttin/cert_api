@@ -1,15 +1,15 @@
 package api
 
 import (
+	"encoding/json"
 	"fmt"
+	"github.com/dgraph-io/badger"
 	"github.com/gorilla/mux"
+	"github.com/pkg/errors"
+	"github.com/satori/go.uuid"
+	"io/ioutil"
 	"net/http"
 	"time"
-	"github.com/dgraph-io/badger"
-	"io/ioutil"
-	"encoding/json"
-	"github.com/satori/go.uuid"
-	"github.com/pkg/errors"
 )
 
 type Certificate struct {
@@ -37,7 +37,7 @@ func addCertificate() http.HandlerFunc {
 		certBytes, _ := json.Marshal(cert)
 		fmt.Fprint(responseWriter, string(certBytes))
 
-		<- addDelay.C
+		<-addDelay.C
 	}
 }
 
@@ -89,7 +89,7 @@ func getCertificate() http.HandlerFunc {
 				return err
 			}
 
-			var cert Certificate;
+			var cert Certificate
 			err = json.Unmarshal(val, &cert)
 			if err != nil {
 				http.Error(responseWriter, err.Error(), 500)
@@ -110,7 +110,7 @@ func getCertificate() http.HandlerFunc {
 			return nil
 		})
 
-		<- addDelay.C
+		<-addDelay.C
 	}
 }
 
