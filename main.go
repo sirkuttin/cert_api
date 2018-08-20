@@ -3,7 +3,7 @@ package main
 import (
 	"errors"
 	"github.com/Sirupsen/logrus"
-	"github.com/sirkuttin/acme-cert-api/api/api"
+	"github.com/sirkuttin/acme-cert-api/api"
 	"os"
 	"github.com/dgraph-io/badger"
 	"syscall"
