@@ -18,3 +18,5 @@ vendor/
 tmp_db/
 
 app_db/
+
+acme-cert-api
